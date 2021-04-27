@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A72637DDD1007AA62C /* AppDelegate.swift */; };
 		69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A92637DDD1007AA62C /* SceneDelegate.swift */; };
-		69D835AC2637DDD1007AA62C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835AB2637DDD1007AA62C /* ViewController.swift */; };
 		69D835AF2637DDD1007AA62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D835AD2637DDD1007AA62C /* Main.storyboard */; };
 		69D835B12637DDD5007AA62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D835B02637DDD5007AA62C /* Assets.xcassets */; };
 		69D835B42637DDD5007AA62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D835B22637DDD5007AA62C /* LaunchScreen.storyboard */; };
+		69D835FF26383ACD007AA62C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69D835FE26383ACD007AA62C /* GoogleService-Info.plist */; };
+		69D8360626384064007AA62C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D8360526384064007AA62C /* SignInViewController.swift */; };
+		69D8360A263844CD007AA62C /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D83609263844CD007AA62C /* EntityModel.swift */; };
+		85078D86A85DF83AA108037C /* Pods_Cafe_NIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B361695366B0F1F300F5C1 /* Pods_Cafe_NIBM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B361695366B0F1F300F5C1 /* Pods_Cafe_NIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe_NIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D02AC431D5F0550CEF088FA /* Pods-Cafe-NIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.release.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.release.xcconfig"; sourceTree = "<group>"; };
 		69D835A42637DDD1007AA62C /* Cafe-NIBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-NIBM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D835A72637DDD1007AA62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D835A92637DDD1007AA62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69D835AB2637DDD1007AA62C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69D835AE2637DDD1007AA62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69D835B02637DDD5007AA62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D835B32637DDD5007AA62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D835B52637DDD5007AA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D835FE26383ACD007AA62C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69D8360526384064007AA62C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		69D83609263844CD007AA62C /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
+		82AA1B27C07AA46A7470A74A /* Pods-Cafe-NIBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.debug.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85078D86A85DF83AA108037C /* Pods_Cafe_NIBM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				69D835A62637DDD1007AA62C /* Cafe-NIBM */,
 				69D835A52637DDD1007AA62C /* Products */,
+				810ACC85FD4020722BDBD67D /* Pods */,
+				C29512085185187A535EB303 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,58 @@
 		69D835A62637DDD1007AA62C /* Cafe-NIBM */ = {
 			isa = PBXGroup;
 			children = (
+				69D8360126383DEE007AA62C /* Models */,
+				69D8360226383E25007AA62C /* Views */,
+				69D8360326383E31007AA62C /* Controllers */,
 				69D835A72637DDD1007AA62C /* AppDelegate.swift */,
 				69D835A92637DDD1007AA62C /* SceneDelegate.swift */,
-				69D835AB2637DDD1007AA62C /* ViewController.swift */,
-				69D835AD2637DDD1007AA62C /* Main.storyboard */,
 				69D835B02637DDD5007AA62C /* Assets.xcassets */,
 				69D835B22637DDD5007AA62C /* LaunchScreen.storyboard */,
 				69D835B52637DDD5007AA62C /* Info.plist */,
+				69D835FE26383ACD007AA62C /* GoogleService-Info.plist */,
 			);
 			path = "Cafe-NIBM";
+			sourceTree = "<group>";
+		};
+		69D8360126383DEE007AA62C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69D83609263844CD007AA62C /* EntityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69D8360226383E25007AA62C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69D835AD2637DDD1007AA62C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69D8360326383E31007AA62C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69D8360526384064007AA62C /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		810ACC85FD4020722BDBD67D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82AA1B27C07AA46A7470A74A /* Pods-Cafe-NIBM.debug.xcconfig */,
+				4D02AC431D5F0550CEF088FA /* Pods-Cafe-NIBM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C29512085185187A535EB303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B361695366B0F1F300F5C1 /* Pods_Cafe_NIBM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D835B82637DDD5007AA62C /* Build configuration list for PBXNativeTarget "Cafe-NIBM" */;
 			buildPhases = (
+				191F5F29F7789D833F300D93 /* [CP] Check Pods Manifest.lock */,
 				69D835A02637DDD1007AA62C /* Sources */,
 				69D835A12637DDD1007AA62C /* Frameworks */,
 				69D835A22637DDD1007AA62C /* Resources */,
+				B988BCF7890AE31B711EB6F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D835B42637DDD5007AA62C /* LaunchScreen.storyboard in Resources */,
+				69D835FF26383ACD007AA62C /* GoogleService-Info.plist in Resources */,
 				69D835B12637DDD5007AA62C /* Assets.xcassets in Resources */,
 				69D835AF2637DDD1007AA62C /* Main.storyboard in Resources */,
 			);
@@ -132,13 +189,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		191F5F29F7789D833F300D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cafe-NIBM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B988BCF7890AE31B711EB6F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69D835A02637DDD1007AA62C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D835AC2637DDD1007AA62C /* ViewController.swift in Sources */,
+				69D8360626384064007AA62C /* SignInViewController.swift in Sources */,
 				69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */,
+				69D8360A263844CD007AA62C /* EntityModel.swift in Sources */,
 				69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +383,7 @@
 		};
 		69D835B92637DDD5007AA62C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82AA1B27C07AA46A7470A74A /* Pods-Cafe-NIBM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +402,7 @@
 		};
 		69D835BA2637DDD5007AA62C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D02AC431D5F0550CEF088FA /* Pods-Cafe-NIBM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
