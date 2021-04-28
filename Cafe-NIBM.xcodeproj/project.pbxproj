@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6964ABAB263982E2005BCDB2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964ABAA263982E2005BCDB2 /* SignUpViewController.swift */; };
 		69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A72637DDD1007AA62C /* AppDelegate.swift */; };
 		69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A92637DDD1007AA62C /* SceneDelegate.swift */; };
 		69D835AF2637DDD1007AA62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D835AD2637DDD1007AA62C /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		03B361695366B0F1F300F5C1 /* Pods_Cafe_NIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe_NIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D02AC431D5F0550CEF088FA /* Pods-Cafe-NIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.release.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.release.xcconfig"; sourceTree = "<group>"; };
+		6964ABAA263982E2005BCDB2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		69D835A42637DDD1007AA62C /* Cafe-NIBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-NIBM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D835A72637DDD1007AA62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D835A92637DDD1007AA62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				69D8360526384064007AA62C /* SignInViewController.swift */,
+				6964ABAA263982E2005BCDB2 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */,
 				69D8360A263844CD007AA62C /* EntityModel.swift in Sources */,
 				69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */,
+				6964ABAB263982E2005BCDB2 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

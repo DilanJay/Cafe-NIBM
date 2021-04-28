@@ -16,46 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ynK-cf-wBL">
-                                <rect key="frame" x="97.5" y="200" width="180" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="NKe-as-P5Y"/>
-                                    <constraint firstAttribute="height" constant="180" id="rbR-aI-sDT"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHE-Fx-ZtP">
+                                <rect key="frame" x="97.5" y="231.5" width="180" height="204"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ynK-cf-wBL">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="NKe-as-P5Y"/>
+                                            <constraint firstAttribute="height" constant="180" id="rbR-aI-sDT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-eS-12V">
+                                        <rect key="frame" x="39.5" y="180" width="101" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmt-yM-ncN">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.7952567935" green="0.31912428139999999" blue="0.26662546399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-v0-nGg">
+                                                <rect key="frame" x="50" y="0.0" width="51" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.35934478040000001" green="0.7122603059" blue="0.92160135509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by NIBM Computing 192" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb3-MG-W0q">
-                                <rect key="frame" x="120" y="611" width="135" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="137.5" y="623" width="100" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-eS-12V">
-                                <rect key="frame" x="137" y="385" width="101" height="24"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmt-yM-ncN">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.7952567935" green="0.31912428139999999" blue="0.26662546399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-v0-nGg">
-                                        <rect key="frame" x="50" y="0.0" width="51" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.35934478040000001" green="0.7122603059" blue="0.92160135509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ynK-cf-wBL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D8V-EY-bOC"/>
-                            <constraint firstItem="sR1-eS-12V" firstAttribute="top" secondItem="ynK-cf-wBL" secondAttribute="bottom" constant="5" id="RRE-ba-CtT"/>
-                            <constraint firstItem="ynK-cf-wBL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="S2T-1X-Fjr"/>
-                            <constraint firstItem="sR1-eS-12V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xhi-iY-sYB"/>
+                            <constraint firstItem="BHE-Fx-ZtP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AX5-DH-Jft"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kb3-MG-W0q" secondAttribute="bottom" constant="15" id="cN1-Xa-LwS"/>
                             <constraint firstItem="Kb3-MG-W0q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="f0m-KW-doQ"/>
+                            <constraint firstItem="BHE-Fx-ZtP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sg4-Eg-W0D"/>
                         </constraints>
                     </view>
                 </viewController>
