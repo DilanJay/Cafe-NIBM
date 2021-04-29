@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCell" rowHeight="237" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="Cafe_NIBM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="237"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="237"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="riceNcurry" translatesAutoresizingMaskIntoConstraints="NO" id="0fO-Jg-xnV">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Yjv-1f-dW0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDb-rx-3q4">
+                        <rect key="frame" x="20" y="160" width="81.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" red="0.74084424969999996" green="0.34651270509999998" blue="0.2901633978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ0-uF-bKC">
+                        <rect key="frame" x="20" y="183" width="97" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqr-Il-Z5E">
+                        <rect key="frame" x="20" y="207.5" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.43959641459999999" green="0.70882230999999996" blue="0.90199106929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-Pk-kIH">
+                        <rect key="frame" x="251" y="15" width="80" height="30"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Vym-nX-aMd"/>
+                            <constraint firstAttribute="width" constant="80" id="sm7-dp-txq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xQ0-uF-bKC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0Ro-rr-idU"/>
+                    <constraint firstItem="0fO-Jg-xnV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2pt-nx-aLH"/>
+                    <constraint firstItem="0fO-Jg-xnV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4b1-2C-jsy"/>
+                    <constraint firstAttribute="trailing" secondItem="XXI-Pk-kIH" secondAttribute="trailing" constant="15" id="7yZ-NY-Bof"/>
+                    <constraint firstItem="Bqr-Il-Z5E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8It-7O-1df"/>
+                    <constraint firstItem="kDb-rx-3q4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="D0Z-PD-5sR"/>
+                    <constraint firstItem="XXI-Pk-kIH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="RCK-3b-dGQ"/>
+                    <constraint firstItem="kDb-rx-3q4" firstAttribute="top" secondItem="0fO-Jg-xnV" secondAttribute="bottom" constant="10" id="RHj-19-7YF"/>
+                    <constraint firstItem="xQ0-uF-bKC" firstAttribute="top" secondItem="kDb-rx-3q4" secondAttribute="bottom" constant="5" id="Y2v-Kn-H6m"/>
+                    <constraint firstItem="Bqr-Il-Z5E" firstAttribute="top" secondItem="xQ0-uF-bKC" secondAttribute="bottom" constant="10" id="YIu-Dz-RSW"/>
+                    <constraint firstAttribute="trailing" secondItem="0fO-Jg-xnV" secondAttribute="trailing" id="hYQ-v5-lDB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodDescription" destination="xQ0-uF-bKC" id="yFL-Aj-HvM"/>
+                <outlet property="foodDiscount" destination="XXI-Pk-kIH" id="TbJ-pO-PIO"/>
+                <outlet property="foodImage" destination="0fO-Jg-xnV" id="adJ-Pj-6XG"/>
+                <outlet property="foodName" destination="kDb-rx-3q4" id="Ucm-Z7-nMT"/>
+                <outlet property="foodPrice" destination="Bqr-Il-Z5E" id="I8A-ed-7kb"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="169.08482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="riceNcurry" width="257" height="138.5"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -16,6 +16,7 @@ struct User {
 
 struct FoodItem {
     var foodID: String
+    var foodImage: String
     var foodName: String
     var description: String
     var price: Double

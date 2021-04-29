@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QEv-Xj-h1D">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -372,6 +372,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yp-Fy-RkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959" y="93"/>
+        </scene>
+        <!--Food View Controller-->
+        <scene sceneID="JwY-Fq-8v4">
+            <objects>
+                <viewController id="QEv-Xj-h1D" customClass="FoodViewController" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5wN-yE-SdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWH-Eh-Tgs">
+                                <rect key="frame" x="20" y="20" width="47" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.79524207120000001" green="0.3152111769" blue="0.26270318030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwW-ud-Qwa">
+                                <rect key="frame" x="20" y="64" width="335" height="583"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QEv-Xj-h1D" id="qCf-gK-NPs"/>
+                                    <outlet property="delegate" destination="QEv-Xj-h1D" id="BY0-RD-WQT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FMN-Oj-pYO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qwW-ud-Qwa" firstAttribute="top" secondItem="bWH-Eh-Tgs" secondAttribute="bottom" constant="20" id="9TY-M6-t05"/>
+                            <constraint firstItem="bWH-Eh-Tgs" firstAttribute="top" secondItem="FMN-Oj-pYO" secondAttribute="top" constant="20" id="H4j-KQ-Gio"/>
+                            <constraint firstItem="FMN-Oj-pYO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bWH-Eh-Tgs" secondAttribute="trailing" constant="308" id="IEx-TL-tmQ"/>
+                            <constraint firstItem="qwW-ud-Qwa" firstAttribute="leading" secondItem="FMN-Oj-pYO" secondAttribute="leading" constant="20" id="SwK-TH-vG8"/>
+                            <constraint firstItem="bWH-Eh-Tgs" firstAttribute="leading" secondItem="FMN-Oj-pYO" secondAttribute="leading" constant="20" id="Tmc-BY-Ghy"/>
+                            <constraint firstItem="FMN-Oj-pYO" firstAttribute="bottom" secondItem="qwW-ud-Qwa" secondAttribute="bottom" constant="20" id="jx7-05-gko"/>
+                            <constraint firstItem="FMN-Oj-pYO" firstAttribute="trailing" secondItem="qwW-ud-Qwa" secondAttribute="trailing" constant="20" id="vBl-v9-Xg4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblFood" destination="qwW-ud-Qwa" id="avy-Pz-LgE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEw-vL-ogg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="92"/>
         </scene>
     </scenes>
     <resources>
