@@ -725,7 +725,7 @@
                                 <color key="textColor" red="0.79524207120000001" green="0.3152111769" blue="0.26270318030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T8A-zS-mDY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T8A-zS-mDY">
                                 <rect key="frame" x="20" y="64" width="335" height="534"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -749,6 +749,9 @@
                     <tabBarItem key="tabBarItem" title="ORDER" id="J8e-Cz-F7A">
                         <imageReference key="image" image="newspaper" catalog="system" renderingMode="original"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tblOrders" destination="T8A-zS-mDY" id="HAI-sf-WRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SJ-ku-eW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -763,9 +766,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W79-sC-RVc">
-                                <rect key="frame" x="149" y="498" width="76" height="30"/>
+                                <rect key="frame" x="137.5" y="488" width="100" height="40"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Sign Out"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6FJ-EB-Bjb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Bp5-HQ-36s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnSignOut:" destination="Ims-Tz-lIy" eventType="touchUpInside" id="wou-me-Iem"/>
                                 </connections>
@@ -818,11 +833,10 @@
                         <viewLayoutGuide key="safeArea" id="xTz-Sk-IoA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xTz-Sk-IoA" firstAttribute="bottom" secondItem="W79-sC-RVc" secondAttribute="bottom" constant="90" id="OOF-kd-1w3"/>
+                            <constraint firstItem="W79-sC-RVc" firstAttribute="centerX" secondItem="QpP-5Z-LPm" secondAttribute="centerX" id="ABn-Ch-HMH"/>
+                            <constraint firstItem="xTz-Sk-IoA" firstAttribute="bottom" secondItem="W79-sC-RVc" secondAttribute="bottom" constant="90" id="J1Y-G8-9GQ"/>
                             <constraint firstItem="b3q-NV-M94" firstAttribute="top" secondItem="xTz-Sk-IoA" secondAttribute="top" constant="20" id="fJx-36-f0P"/>
-                            <constraint firstItem="xTz-Sk-IoA" firstAttribute="trailing" secondItem="W79-sC-RVc" secondAttribute="trailing" constant="150" id="gDE-se-HqT"/>
                             <constraint firstItem="nUc-Tb-HFA" firstAttribute="top" secondItem="b3q-NV-M94" secondAttribute="bottom" constant="25" id="jdM-nc-rOL"/>
-                            <constraint firstItem="W79-sC-RVc" firstAttribute="leading" secondItem="xTz-Sk-IoA" secondAttribute="leading" constant="149" id="kht-Un-gfg"/>
                             <constraint firstItem="b3q-NV-M94" firstAttribute="leading" secondItem="xTz-Sk-IoA" secondAttribute="leading" constant="20" id="lqa-n7-1i4"/>
                             <constraint firstItem="xTz-Sk-IoA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b3q-NV-M94" secondAttribute="trailing" constant="256" id="nbM-v0-okD"/>
                             <constraint firstItem="nUc-Tb-HFA" firstAttribute="leading" secondItem="xTz-Sk-IoA" secondAttribute="leading" constant="35" id="q11-Tf-scf"/>

@@ -8,7 +8,12 @@
 import UIKit
 
 class OrderTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var lblOrderID: UILabel!
+    @IBOutlet weak var lblStatus: UILabel!
+    @IBOutlet weak var lblTotal: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -18,4 +23,9 @@ class OrderTableViewCell: UITableViewCell {
 
     }
     
+    func setUpUI(order: Order) {
+        lblOrderID.text = order.orderID
+        lblStatus.text = order.orderStatus
+        lblTotal.text = "LKR- \(order.orderTotal)"
+    }
 }
