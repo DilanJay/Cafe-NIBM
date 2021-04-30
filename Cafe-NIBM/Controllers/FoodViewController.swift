@@ -14,18 +14,21 @@ class FoodViewController: UIViewController {
     
     @IBOutlet weak var tblFood: UITableView!
     
-    var foodItem: [FoodItem] = [
-
-    ]
+    var foodItem: [FoodItem] = []
+    var selectedFoodItem: FoodItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tblFood.register(UINib(nibName: "FoodItemTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodCell")
-        
         ref = Database.database().reference()
-        
         getFoodItemData()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeToDetailsFood" {
+            let destinationViewController = segue.destination as! FoodItemViewController
+            destinationViewController.foodItem = selectedFoodItem 
+        }
     }
 }
 
@@ -70,6 +73,7 @@ extension FoodViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        selectedFoodItem = foodItem[indexPath.row]
+        self.performSegue(withIdentifier: "HomeToDetailsFood", sender: nil)
     }
 }

@@ -16,6 +16,11 @@
 		69A51A1D263C195A003E4972 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A1C263C195A003E4972 /* AccountViewController.swift */; };
 		69A51A20263C1F5D003E4972 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A1F263C1F5D003E4972 /* LaunchViewController.swift */; };
 		69A51A23263C31FD003E4972 /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A22263C31FD003E4972 /* FoodItemViewController.swift */; };
+		69A51A26263C3D64003E4972 /* CartHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A25263C3D64003E4972 /* CartHandler.swift */; };
+		69A51A29263C4375003E4972 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A28263C4375003E4972 /* CartViewController.swift */; };
+		69A51A2C263C58BA003E4972 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A2B263C58BA003E4972 /* OrderViewController.swift */; };
+		69A51A30263C59AB003E4972 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51A2E263C59AB003E4972 /* OrderTableViewCell.swift */; };
+		69A51A31263C59AB003E4972 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A51A2F263C59AB003E4972 /* OrderTableViewCell.xib */; };
 		69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A72637DDD1007AA62C /* AppDelegate.swift */; };
 		69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D835A92637DDD1007AA62C /* SceneDelegate.swift */; };
 		69D835AF2637DDD1007AA62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D835AD2637DDD1007AA62C /* Main.storyboard */; };
@@ -39,6 +44,11 @@
 		69A51A1C263C195A003E4972 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		69A51A1F263C1F5D003E4972 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		69A51A22263C31FD003E4972 /* FoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
+		69A51A25263C3D64003E4972 /* CartHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHandler.swift; sourceTree = "<group>"; };
+		69A51A28263C4375003E4972 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		69A51A2B263C58BA003E4972 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		69A51A2E263C59AB003E4972 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		69A51A2F263C59AB003E4972 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		69D835A42637DDD1007AA62C /* Cafe-NIBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-NIBM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D835A72637DDD1007AA62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D835A92637DDD1007AA62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 			children = (
 				6964ABAE2639CF00005BCDB2 /* SessionManager.swift */,
 				699283EE263B60F500C1ED32 /* InputValidator.swift */,
+				69A51A25263C3D64003E4972 /* CartHandler.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -78,6 +89,8 @@
 			children = (
 				699283BD263A876B00C1ED32 /* FoodItemTableViewCell.swift */,
 				699283BE263A876B00C1ED32 /* FoodItemTableViewCell.xib */,
+				69A51A2E263C59AB003E4972 /* OrderTableViewCell.swift */,
+				69A51A2F263C59AB003E4972 /* OrderTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -143,6 +156,8 @@
 				69A51A1C263C195A003E4972 /* AccountViewController.swift */,
 				69A51A1F263C1F5D003E4972 /* LaunchViewController.swift */,
 				69A51A22263C31FD003E4972 /* FoodItemViewController.swift */,
+				69A51A28263C4375003E4972 /* CartViewController.swift */,
+				69A51A2B263C58BA003E4972 /* OrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A51A31263C59AB003E4972 /* OrderTableViewCell.xib in Resources */,
 				69D835B42637DDD5007AA62C /* LaunchScreen.storyboard in Resources */,
 				69D835FF26383ACD007AA62C /* GoogleService-Info.plist in Resources */,
 				69D835B12637DDD5007AA62C /* Assets.xcassets in Resources */,
@@ -282,13 +298,17 @@
 			files = (
 				699283BF263A876B00C1ED32 /* FoodItemTableViewCell.swift in Sources */,
 				69D8360626384064007AA62C /* SignInViewController.swift in Sources */,
+				69A51A30263C59AB003E4972 /* OrderTableViewCell.swift in Sources */,
+				69A51A29263C4375003E4972 /* CartViewController.swift in Sources */,
 				699283BA263A810500C1ED32 /* FoodViewController.swift in Sources */,
 				69D835A82637DDD1007AA62C /* AppDelegate.swift in Sources */,
+				69A51A26263C3D64003E4972 /* CartHandler.swift in Sources */,
 				699283EF263B60F500C1ED32 /* InputValidator.swift in Sources */,
 				6964ABAF2639CF00005BCDB2 /* SessionManager.swift in Sources */,
 				69A51A1D263C195A003E4972 /* AccountViewController.swift in Sources */,
 				69D8360A263844CD007AA62C /* EntityModel.swift in Sources */,
 				69A51A20263C1F5D003E4972 /* LaunchViewController.swift in Sources */,
+				69A51A2C263C58BA003E4972 /* OrderViewController.swift in Sources */,
 				69A51A23263C31FD003E4972 /* FoodItemViewController.swift in Sources */,
 				69D835AA2637DDD1007AA62C /* SceneDelegate.swift in Sources */,
 				6964ABAB263982E2005BCDB2 /* SignUpViewController.swift in Sources */,
