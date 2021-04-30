@@ -87,7 +87,11 @@ class SignUpViewController: UIViewController {
                 return
             }
             
-            Loaf("Use data saved on database", state: .success, sender: self).show()
+            Loaf("Use data saved on database", state: .success, sender: self).show() {
+                type in
+                self.dismiss(animated: true, completion: nil)
+            }
+            
         }
     }
 }

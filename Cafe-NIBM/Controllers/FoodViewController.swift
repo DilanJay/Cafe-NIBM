@@ -31,7 +31,8 @@ class FoodViewController: UIViewController {
 
 extension FoodViewController {
     func getFoodItemData() {
-        ref.child("foodItems").observe(.value) { (snapshot) in
+        ref.child("foodItems").observe(.value, with: {
+            (snapshot) in
 
             if let data = snapshot.value {
                 if let foodItems = data as? [String: Any] {
@@ -53,7 +54,7 @@ extension FoodViewController {
                     self.tblFood.reloadData()
                 }
             }
-        }
+        })
     }
 }
 

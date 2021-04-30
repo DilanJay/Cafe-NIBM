@@ -11,11 +11,14 @@ import Loaf
 
 class SignInViewController: UIViewController {
     
+    var ref: DatabaseReference!
+    
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
     }
     
     @IBAction func btnSignIn(_ sender: UIButton) {
@@ -41,9 +44,36 @@ class SignInViewController: UIViewController {
                 Loaf("User name or Password is invalid!", state: .error, sender: self).show()
                 return
             }
-            let sessionManager = SessionManager()
-            sessionManager.saveUserLogin()
-            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
+            
+            if let email = authResult?.user.email {
+                self.getUserDetails(email: email)
+            } else {
+                Loaf("User email not found!", state: .error, sender: self).show()
+            }
+            
+//            let sessionManager = SessionManager()
+//            sessionManager.saveUserLogin()
+//            self.performSegue(withIdentifier: "SignInToHome", sender: nil)
         }
+    }
+    
+    func getUserDetails(email: String) {
+        ref.child("users")
+            .child(email
+                    .replacingOccurrences(of: "@", with: "_")
+                    .replacingOccurrences(of: ".", with: "_")).observe(.value, with: {
+            (snapshot) in
+            
+                        if snapshot.hasChildren() {
+                            if let data = snapshot.value {
+                                if let userData = data as? [String: String] {
+                                    let sessionManager = SessionManager()
+                                    sessionManager.saveUserLogin(user: <#T##User#>)
+                                }
+                            }
+                        } else {
+                            Loaf("User  not found!", state: .error, sender: self).show()
+                        }
+        })
     }
 }

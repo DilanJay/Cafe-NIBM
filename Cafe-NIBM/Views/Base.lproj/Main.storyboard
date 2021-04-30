@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -154,7 +155,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="VfT-CL-LQK" id="cTu-Zy-54t"/>
                         <outlet property="txtPassword" destination="nvd-fo-VJz" id="CTl-ns-LIL"/>
-                        <segue destination="QEv-Xj-h1D" kind="presentation" identifier="SignInToHome" modalPresentationStyle="fullScreen" id="73d-1V-Tga"/>
+                        <segue destination="sq3-tm-INJ" kind="presentation" identifier="SignInToHome" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lFL-3I-uM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -374,7 +375,7 @@
             </objects>
             <point key="canvasLocation" x="959" y="93"/>
         </scene>
-        <!--Food View Controller-->
+        <!--FOOD-->
         <scene sceneID="JwY-Fq-8v4">
             <objects>
                 <viewController id="QEv-Xj-h1D" customClass="FoodViewController" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
@@ -389,7 +390,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwW-ud-Qwa">
-                                <rect key="frame" x="20" y="64" width="335" height="583"/>
+                                <rect key="frame" x="20" y="64" width="335" height="534"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="QEv-Xj-h1D" id="qCf-gK-NPs"/>
@@ -409,17 +410,78 @@
                             <constraint firstItem="FMN-Oj-pYO" firstAttribute="trailing" secondItem="qwW-ud-Qwa" secondAttribute="trailing" constant="20" id="vBl-v9-Xg4"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="FOOD" id="iaq-2b-3x0">
+                        <imageReference key="image" image="square.grid.3x2" catalog="system" renderingMode="original"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tblFood" destination="qwW-ud-Qwa" id="avy-Pz-LgE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEw-vL-ogg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="846"/>
+            <point key="canvasLocation" x="-756" y="1582"/>
+        </scene>
+        <!--ORDER-->
+        <scene sceneID="qc9-FM-Om9">
+            <objects>
+                <viewController id="Wek-k8-1Sd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tW6-QC-gYl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SMk-WU-Jqj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ORDER" id="J8e-Cz-F7A">
+                        <imageReference key="image" image="newspaper" catalog="system" renderingMode="original"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6SJ-ku-eW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="1582"/>
+        </scene>
+        <!--ACCOUNT-->
+        <scene sceneID="26W-th-RhB">
+            <objects>
+                <viewController id="Ims-Tz-lIy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QpP-5Z-LPm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xTz-Sk-IoA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ACCOUNT" id="Qpr-0a-peb">
+                        <imageReference key="image" image="person.circle" catalog="system" renderingMode="original"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vjb-hl-f5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="1582"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yrf-hJ-elU">
+            <objects>
+                <tabBarController id="sq3-tm-INJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GaG-6p-2FT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QEv-Xj-h1D" kind="relationship" relationship="viewControllers" id="y8c-l7-xip"/>
+                        <segue destination="Wek-k8-1Sd" kind="relationship" relationship="viewControllers" id="pmP-nD-CRS"/>
+                        <segue destination="Ims-Tz-lIy" kind="relationship" relationship="viewControllers" id="GZY-9u-UBy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jP-iG-Snc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="824"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo" width="170.5" height="170.5"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="square.grid.3x2" catalog="system" width="128" height="80"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
