@@ -21,6 +21,7 @@ struct FoodItem {
     var description: String
     var price: Double
     var discount: Int
+    var category: String
 }
 
 //class User1 {

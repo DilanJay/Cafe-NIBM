@@ -6,15 +6,15 @@
 //
 
 import UIKit
+import Firebase
 
 class FoodViewController: UIViewController {
+    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var tblFood: UITableView!
     
     var foodItem: [FoodItem] = [
-        FoodItem(foodID: "001", foodImage: "riceNcurry", foodName: "Rice and Curry", description: "Sri lankan special rice and curry", price: 450, discount: 10),
-        FoodItem(foodID: "002", foodImage: "drinks", foodName: "Mango Juice", description: "Number One fruit fuice", price: 200, discount: 5),
-        FoodItem(foodID: "003", foodImage: "burger", foodName: "Chicken Burger", description: "Spicy chicken", price: 750, discount: 0)
 
     ]
     
@@ -22,6 +22,38 @@ class FoodViewController: UIViewController {
         super.viewDidLoad()
 
         tblFood.register(UINib(nibName: "FoodItemTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodCell")
+        
+        ref = Database.database().reference()
+        
+        getFoodItemData()
+    }
+}
+
+extension FoodViewController {
+    func getFoodItemData() {
+        ref.child("foodItems").observe(.value) { (snapshot) in
+
+            if let data = snapshot.value {
+                if let foodItems = data as? [String: Any] {
+                    for item in foodItems {
+                        if let foodInfo = item.value as? [String: Any] {
+                            
+                            let singleFoodItem = FoodItem(
+                                foodID: "",
+                                foodImage: foodInfo["image"] as! String,
+                                foodName: foodInfo["name"] as! String,
+                                description: foodInfo["description"] as! String,
+                                price: foodInfo["price"] as! Double,
+                                discount: foodInfo["discount"] as! Int,
+                                category: foodInfo["category"] as! String)
+                            
+                            self.foodItem.append(singleFoodItem)
+                        }
+                    }
+                    self.tblFood.reloadData()
+                }
+            }
+        }
     }
 }
 
