@@ -67,8 +67,17 @@ class SignInViewController: UIViewController {
                         if snapshot.hasChildren() {
                             if let data = snapshot.value {
                                 if let userData = data as? [String: String] {
+                                    
+                                    let user = User(
+                                        userName: userData["name"]!,
+                                        email: userData["email"]!,
+                                        password: userData["password"]!,
+                                        phoneNo: userData["phone"]!
+                                    )
+                                    
                                     let sessionManager = SessionManager()
-                                    sessionManager.saveUserLogin(user: <#T##User#>)
+                                    sessionManager.saveUserLogin(user: user)
+                                    self.performSegue(withIdentifier: "SignInToHome", sender: nil)
                                 }
                             }
                         } else {

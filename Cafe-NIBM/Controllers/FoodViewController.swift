@@ -67,6 +67,9 @@ extension FoodViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tblFood.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodItemTableViewCell
         cell.setUpView(foodItem: foodItem[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
 }
