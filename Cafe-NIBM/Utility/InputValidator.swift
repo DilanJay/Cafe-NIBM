@@ -8,7 +8,7 @@
 import Foundation
 
 class InputValidator {
-    static let emailRegEx = "[A-Z0-9a-z,_%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+    static let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
     static let nameRegEx = "[A-Za-z ]{2,100}"
     static let mobileRegEx = "^(07)(0|1|2|5|6|7|8)[\\d]{7}$"
     

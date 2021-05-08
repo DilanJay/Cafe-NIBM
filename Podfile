@@ -11,5 +11,6 @@ pod 'Firebase/Database'
 pod 'SwiftyJSON'
 pod 'Kingfisher'
 pod 'Loaf'
+pod 'SPPermissions/Location'
 
 end

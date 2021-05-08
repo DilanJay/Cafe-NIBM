@@ -26,5 +26,7 @@ class AccountViewController: UIViewController {
     
     @IBAction func btnSignOut(_ sender: UIButton) {
         sessionManager.clearUserLoggedStatus()
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "LaunchToSignIn", sender: nil)
     }
 }

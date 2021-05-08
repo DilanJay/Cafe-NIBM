@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692539F82646573000260FBF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692539F72646573000260FBF /* ForgotPasswordViewController.swift */; };
 		6964ABAB263982E2005BCDB2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964ABAA263982E2005BCDB2 /* SignUpViewController.swift */; };
 		6964ABAF2639CF00005BCDB2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964ABAE2639CF00005BCDB2 /* SessionManager.swift */; };
 		699283BA263A810500C1ED32 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699283B9263A810500C1ED32 /* FoodViewController.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		03B361695366B0F1F300F5C1 /* Pods_Cafe_NIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe_NIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D02AC431D5F0550CEF088FA /* Pods-Cafe-NIBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.release.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.release.xcconfig"; sourceTree = "<group>"; };
+		692539F72646573000260FBF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		6964ABAA263982E2005BCDB2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6964ABAE2639CF00005BCDB2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		699283B9263A810500C1ED32 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				69A51A22263C31FD003E4972 /* FoodItemViewController.swift */,
 				69A51A28263C4375003E4972 /* CartViewController.swift */,
 				69A51A2B263C58BA003E4972 /* OrderViewController.swift */,
+				692539F72646573000260FBF /* ForgotPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				6964ABAF2639CF00005BCDB2 /* SessionManager.swift in Sources */,
 				69A51A1D263C195A003E4972 /* AccountViewController.swift in Sources */,
 				69D8360A263844CD007AA62C /* EntityModel.swift in Sources */,
+				692539F82646573000260FBF /* ForgotPasswordViewController.swift in Sources */,
 				69A51A20263C1F5D003E4972 /* LaunchViewController.swift in Sources */,
 				69A51A2C263C58BA003E4972 /* OrderViewController.swift in Sources */,
 				69A51A23263C31FD003E4972 /* FoodItemViewController.swift in Sources */,
