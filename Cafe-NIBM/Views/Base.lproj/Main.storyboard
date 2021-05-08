@@ -951,7 +951,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9U-KM-2bC">
-                                <rect key="frame" x="127.5" y="492" width="120" height="40"/>
+                                <rect key="frame" x="127.5" y="462" width="120" height="40"/>
                                 <color key="backgroundColor" red="0.42364922170000002" green="0.65619021649999998" blue="0.76472586389999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="7rW-Vk-WGQ"/>
@@ -984,17 +984,40 @@
                                     <action selector="btnBack:" destination="AXF-Mv-744" eventType="touchUpInside" id="wwt-FQ-WxC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paq-1c-Rz5">
+                                <rect key="frame" x="127.5" y="526" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.74084424969999996" green="0.34651270509999998" blue="0.2901633978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8vA-Bl-Awf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="hBW-GL-r1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDone:" destination="vhI-cc-zcM" eventType="touchUpInside" id="v8V-Q3-tsa"/>
+                                    <action selector="btnSend:" destination="vhI-cc-zcM" eventType="touchUpInside" id="Qq9-NQ-1Jm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sjx-oy-EFv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l9U-KM-2bC" firstAttribute="top" secondItem="J12-kx-bFk" secondAttribute="bottom" constant="130" id="1OP-8Z-Y7v"/>
+                            <constraint firstItem="l9U-KM-2bC" firstAttribute="top" secondItem="J12-kx-bFk" secondAttribute="bottom" constant="100" id="1OP-8Z-Y7v"/>
                             <constraint firstItem="J12-kx-bFk" firstAttribute="top" secondItem="xqg-rG-t5n" secondAttribute="bottom" constant="65" id="70w-97-b5W"/>
                             <constraint firstItem="xqg-rG-t5n" firstAttribute="top" secondItem="a4t-fp-ZDl" secondAttribute="bottom" constant="30" id="76F-Q4-pS6"/>
                             <constraint firstItem="WME-oj-BIo" firstAttribute="leading" secondItem="sjx-oy-EFv" secondAttribute="leading" constant="20" id="7c3-7f-2lz"/>
                             <constraint firstItem="a4t-fp-ZDl" firstAttribute="centerX" secondItem="EpO-pB-jTe" secondAttribute="centerX" id="CWC-B3-64d"/>
                             <constraint firstItem="sjx-oy-EFv" firstAttribute="trailing" secondItem="J12-kx-bFk" secondAttribute="trailing" constant="40" id="NLO-M2-UyF"/>
                             <constraint firstItem="xqg-rG-t5n" firstAttribute="centerX" secondItem="EpO-pB-jTe" secondAttribute="centerX" id="PhV-PU-aTF"/>
+                            <constraint firstItem="Paq-1c-Rz5" firstAttribute="top" secondItem="l9U-KM-2bC" secondAttribute="bottom" constant="24" id="SSt-AG-Ubi"/>
+                            <constraint firstItem="Paq-1c-Rz5" firstAttribute="centerX" secondItem="EpO-pB-jTe" secondAttribute="centerX" id="TXn-2P-tiS"/>
                             <constraint firstItem="a4t-fp-ZDl" firstAttribute="top" secondItem="sjx-oy-EFv" secondAttribute="top" constant="50" id="fiB-1I-TSz"/>
                             <constraint firstItem="l9U-KM-2bC" firstAttribute="centerX" secondItem="EpO-pB-jTe" secondAttribute="centerX" id="fkE-hb-wuS"/>
                             <constraint firstItem="WME-oj-BIo" firstAttribute="top" secondItem="sjx-oy-EFv" secondAttribute="top" constant="30" id="nL6-Zw-cvv"/>
@@ -1011,7 +1034,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lFL-3I-uM7"/>
+        <segue reference="u6g-It-5xd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
